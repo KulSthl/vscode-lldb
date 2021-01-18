@@ -7,17 +7,17 @@ variables:
   AZP_CACHING_CONTENT_FORMAT: SingleTar
   AZP_CACHING_TAR: true
 
-  setenvLinux: |
-      export PATH=$HOME/.cargo/bin:$PATH
-      echo "$(publicRelease)"
+  # setenvLinux: |
+  #     export PATH=$HOME/.cargo/bin:$PATH
+  #     echo "$(publicRelease)"
   setenvOSX: |
       export PATH=$HOME/.cargo/bin:$PATH
       echo "$(publicRelease)"
-  setenvWindows: |
-      set PATH=%USERPROFILE%\.cargo\bin;%PATH%
-      set PYTHONHOME=%USEPYTHONVERSION_PYTHONLOCATION%
-      set PYTHONPATH=%PYTHONHOME%\Lib;%PYTHONHOME%\DLLs
-      echo "$(publicRelease)"
+  # setenvWindows: |
+  #     set PATH=%USERPROFILE%\.cargo\bin;%PATH%
+  #     set PYTHONHOME=%USEPYTHONVERSION_PYTHONLOCATION%
+  #     set PYTHONPATH=%PYTHONHOME%\Lib;%PYTHONHOME%\DLLs
+  #     echo "$(publicRelease)"
 
 ########################################################################################################################
 
